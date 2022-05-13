@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=MedievalSharp">
+  
+</head>
+<body>
+  <h1>Dice Roller</h1>
+  <div class="container">
+    <section class="border">
+      <div class="type-dice">
+        <label>
+          <input type="radio" name="dice-selection" value="4">
+          <img src="/images/d4.png" class="dice-img">
+        </label>
+        <label>
+          <input type="radio" name="dice-selection" value="6">
+          <img src="/images/d6.png" class="dice-img">
+        </label>
+        <label>
+          <input type="radio" name="dice-selection" value="8">
+          <img src="/images/d8.png" class="dice-img">
+        </label>
+        <label>
+          <input type="radio" name="dice-selection" value="10">
+          <img src="/images/d10.png" class="dice-img">
+        </label>
+        <label>
+          <input type="radio" name="dice-selection" value="12">
+          <img src="/images/d12.png" class="dice-img">
+        </label>
+        <label>
+          <input type="radio" name="dice-selection" value="20">
+          <img src="/images/d20.png" class="dice-img">
+        </label>
+      </div>
+    
+      <div class="num-dice">
+        <button class="dice-minus">-</button>
+        <span class="dice-counter">0</span>
+        <button class="dice-plus">+</button>
+      </div>
+      <div class="btn-dice">
+        <button class="roll-dice">Roll the Dice</button>
+      </div>
+
+    </section>
+
+    <section class="border">
+      <div class ="roll">
+        <h2>Dice Total</h2>
+        <span class="dice-results">0</span>
+        <h2>Dice Rolls</h2>
+        <span class="dice-all-rolls">0</span>
+      </div>
+    </section>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

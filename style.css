@@ -1,0 +1,123 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: 'MedievalSharp';
+  font-size: 1.125em;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.border {
+/*   outline: 2px solid red; */
+}
+
+.dice-img {
+  width: 3em;
+}
+
+.container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.container > * {
+  flex: 1;
+  max-width: 30em;
+}
+
+.container div {
+  margin: 1.5rem 0;
+}
+
+.type-dice {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+
+.num-dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.btn-dice {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.roll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+/* Plus Button */
+.dice-plus,
+.dice-minus {
+  width: 35px;
+  height: 35px;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 1.125em;
+  transition: all 0.2s;
+}
+
+.dice-plus:hover,
+.dice-minus:hover {
+  background-color: wheat;
+}
+
+.roll-dice {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  transition: all 0.2s;
+  font-family: 'MedievalSharp';
+  font-size: 1.15em;
+
+}
+
+.roll-dice:hover {
+  background-color: wheat;
+}
+
+/* HIDE RADIO */
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type = radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type = radio]:checked + img {
+  outline: 2px solid #5361AD;
+}
